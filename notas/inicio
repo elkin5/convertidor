@@ -1,0 +1,5 @@
+Lo primero es que se inicia el proyecto node con 
+npm init
+
+donde se pone con licencia MIT y entrada server.js
+

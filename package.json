@@ -1,0 +1,23 @@
+{
+  "name": "convertidor",
+  "version": "0.1.0",
+  "description": "Convertidor de unidades de temperatura",
+  "main": "server.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elkin5/convertidor.git"
+  },
+  "keywords": [
+    "converter",
+    "js"
+  ],
+  "author": "devkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elkin5/convertidor/issues"
+  },
+  "homepage": "https://github.com/elkin5/convertidor#readme"
+}
