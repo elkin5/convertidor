@@ -1,0 +1,31 @@
+se van a usar los test bajo la premisa TDD donde se crean o esciben primero los test
+y luego las funcionalidades
+
+para esto se utiliza la libreria npm i --save-dev mocha chai
+
+dev significa que lo vamos a utilizar para desarrollar, no va a hacer parte de la logica
+
+chai se ejecuta desde el package.json mediante script 
+se utiliza expect para comparar valores
+
+dentro de el test de converter vamos a ir diciendole que funcionalidad vamos a testear
+y dentro de ella vamos a escribir el test que necesite
+
+esto se hace con describe('') una funcion dentro del scope global de mocha
+con it le decimos que es lo que vaamoa a testear y dentro de este la funcion que es 
+propiamente el test
+ahora se guarda en una variable lo que nos devuelva la logica de aplicacion
+ahora mediante el expect opero sobre la variable que tomamos de la logica de negocio
+
+mocha provee los metodos para crear el test 
+chai provee los conmparadores
+
+para correr un test lo hacemos con el comando mocha 
+este comando va y busca todo lo que tengamos en la carpeta test y lo vaa ejecutar
+
+mediante esta practica hacemos que fallen los test y este es el inicio de la creacion
+de la logica de negocio
+
+con los 2 puntos .. se llama al main del modulo en el que se esta trabajando.
+para que llame al main en node se pone en el package.json el main como 
+el modulo que deseo llamar 

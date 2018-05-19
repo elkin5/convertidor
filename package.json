@@ -2,9 +2,9 @@
   "name": "convertidor",
   "version": "0.1.0",
   "description": "Convertidor de unidades de temperatura",
-  "main": "server.js",
+  "main": "app/converter.js",
   "scripts": {
-    "test": ""
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/elkin5/convertidor/issues"
   },
-  "homepage": "https://github.com/elkin5/convertidor#readme"
+  "homepage": "https://github.com/elkin5/convertidor#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
 }
