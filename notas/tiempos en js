@@ -1,0 +1,41 @@
+como se ejecuta javascript?
+
+una de las cosas mas importantes son los callbacks o retrollamados 
+o funciones que estan ahi que sabemos que se van a ejecutar en algun momento 
+por algun evento.
+esto gracias a que solo contiene un solo hilo de ejecucion pero tambien permite agendar procesos 
+para que se ejecuten en un momento definido, con todo esto javascript es un lenguaje que no se
+bloquea.
+
+callback = llamado dentro de otro llamado
+
+dentro del navegador se puede ver el call satck o la forma en como se van solucionando los llamados
+donde anonimous function es la funcion principal o main
+
+en resumidas todo en js es una funcion a diferencia de java donde todo es un objeto
+
+si se deja un metodo que hace llamados infinitios entonces la pila se queda sin memoria 
+y retorna un error de fullstack
+
+cuando se ejecuta todo lo de la pila, se ejecuta lo que se encuentra en la cola que es su mayoria son 
+respuestas del API o del motor de node, mientras haya llamados en el call stack no se toma 
+ningun valor de la queoqe o cola de js
+
+ahora que pasa si la pila nunca deja de tener cosas?
+
+la mayoria de llamados asicronos o callback deben esperar que la pila este vacia.
+cuando hago un settimeout donde le paso un callback y un valor no es el valor exacto
+es un valor 
+
+por eso se debe tener especial cuidado con call stack. 
+esta bien hacer codigo sicronico para llamados al DOM o para operaciones simples
+pero cuando sean proceso pesados como un llamado a base de datos debe ser asicronno
+para no sobrecargar la pila y permitor que js siga ejecutando codigo
+
+para el task queoqe o cola de tareas tambien puede suceder algo parecido 
+suscribiendo eventos que se repiten muchas veces en la pagina como
+por ejemplo el scroll.
+un debounce lo que hace es esperar cierto tiempo para volver a ejecutar ese callback
+al que nos hemos suscrito para asi evitar llenar la task queoqe.
+
+todo esto es el event loop manejados por javascript.
