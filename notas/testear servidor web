@@ -1,0 +1,16 @@
+vamos a testear un servidor web
+
+para estos vamos a tener que instalar express para manejar el servidor
+y axios para realizarf un request
+
+npm i --save express axios
+
+req y res lo utiliza expres para en lazar todos las peticiones
+
+con req.query se toma los valores de los parametros pasados al hacer el request
+
+al correr un llamado asycrono dentro de los test debo llamarlos de una manera distinta y esto 
+se hace poniendo un callback llamaod done que se llama al final donde mocha es el encargado
+de ponerlo
+
+con el done lo que se hace es decirle que espere a que el expect se ejecute 
